@@ -1,0 +1,84 @@
+<!-- 5. Write a JavaScript program to add two numbers of addition, subtraction, multiplication, and division (using simple functions) -->
+<!-- add,sub,multi,division -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .btn{
+            margin-top: 20px;
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            font-weight: 700;
+            border-radius: 12px;
+        }
+        .main{
+            border: 2px solid black;
+            padding: 10px;
+            width: 500px;
+        }
+        #Result{
+            color: blue;
+            border: 2px solid black;
+            height: 30px;
+            min-width: 150px;
+            text-align: center;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body class="main">
+    <table>
+        <tr>
+            <td>Enter First Number </td>
+            <td><input type="text" id="A"></td>
+        </tr>
+        <tr>
+            <td>Enter Second Number </td>
+            <td><input type="text" id="B"></td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td><input type="button" class="btn" value="+" onclick="add()"></td>
+            <td><input type="button" class="btn" value="−" onclick="sub()"></td>
+            <td><input type="button" class="btn" value="×" onclick="multi()"></td>
+            <td><input type="button" class="btn" value="÷" onclick="div()"></td>
+        </tr>
+        </table>
+        <h1 id="Result"></h1>
+
+        <script>
+            function add(){
+                let a = parseInt(document.getElementById('A').value);
+                let b = parseInt(document.getElementById('B').value);
+                document.getElementById('Result').innerHTML = a+b;
+            }
+            
+            function sub(){
+                let a = parseInt(document.getElementById('A').value);
+                let b = parseInt(document.getElementById('B').value);
+                document.getElementById('Result').innerHTML = a-b;
+            }
+            
+            function multi(){
+                let a = parseInt(document.getElementById('A').value);
+                let b = parseInt(document.getElementById('B').value);
+                document.getElementById('Result').innerHTML = a*b;
+            }
+            
+            function div(){
+                let a = parseInt(document.getElementById('A').value);
+                let b = parseInt(document.getElementById('B').value);
+                document.getElementById('Result').innerHTML = a/b;
+            }
+
+        </script>
+
+</body>
+</htm

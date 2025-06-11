@@ -1,0 +1,35 @@
+<!-- 8. Write a JavaScript program to create a bank system using switch case. (arrow function use) -->
+
+<script>
+    function bankSystem(Act){
+        
+            let balance = 5000;
+
+            switch(action){
+                case 1:
+                let deposit = Number(prompt("Enter the amount to deposit:"));
+                balance += deposit;
+                document.write(deposit + " Deposit successful ");
+                
+                break;
+            case 2:
+                let withdraw = Number(prompt("Enter the amount to withdraw:"));
+                if(withdraw > balance){
+                    document.write("Insufficient balance");
+                }else{
+                    balance -= withdraw;
+                    document.write( withdraw + " Withdrawal successful");
+                }
+                break;
+                case 3:
+                    document.write("Your current balance is: " + balance);
+                    break;
+                default:
+                    document.write("Invalid choice");
+                    }
+        }
+        let action = Number(prompt("1. Deposit \n2. Withdraw\n3. Check Balance"));
+        bankSystem(action);
+
+
+</script>
