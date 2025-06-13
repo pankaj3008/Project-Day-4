@@ -1,12 +1,11 @@
 <!-- 10. Write a JavaScript program to decide that you are eligible to vote. (using with arguments function) -->
 
 <script>
-        function getResult(){
-            let age = Number(prompt("Enter Your Age "));
+        function getResult(age){
             let confirm = (age >= 18)?"You can Vote..!":"You can not Vote..!";
-            
             document.write(confirm);
         }
+            let age = Number(prompt("Enter Your Age "));
         getResult();
         
 </script>
